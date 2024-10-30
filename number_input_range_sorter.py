@@ -8,3 +8,10 @@ while True:
             break
     except:
         print("Whoops, wrong")
+
+    try:
+        repeat = input("Will you input another number in? (yes/no): ")
+        if repeat == "no":
+            break
+    except:
+        print("welp")

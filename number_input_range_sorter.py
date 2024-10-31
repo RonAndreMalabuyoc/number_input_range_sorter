@@ -8,6 +8,7 @@ while True:
             user_input.append(numbers)
         else:
             print("Out of range there buddy")
+            break
     except:
         print("Whoops, wrong")
 

@@ -5,7 +5,7 @@ while True:
         numbers = int(input("Please input a number from 1-50, if not there will be consequences: "))
 
         if numbers > 51:
-            break
+            user_input.append(numbers)
     except:
         print("Whoops, wrong")
 
@@ -22,16 +22,20 @@ row_30 = []
 row_40 = []
 row_50 = []
 
-for numbers in user_input:
-    if user_input <= 10:
+for number in user_input:
+    if number <= 10:
         row_10.append(numbers)
-    elif user_input <= 20:
+    elif number <= 20:
         row_20.append(numbers)
-    elif user_input <= 30:
+    elif number <= 30:
         row_30.append(numbers)
-    elif user_input <= 40:
+    elif number <= 40:
         row_40.append(numbers)
-    elif user_input <= 50:
+    elif number <= 50:
         row_50.append(numbers)
 
-print(row_10, row_20, row_30, row_40, row_50)
+print("Row 1-10:", len(row_10))
+print("Row 11-20:", len(row_20))
+print("Row 21-30:", len(row_30))
+print("Row 31-40:", len(row_40))
+print("Row 41-50:", len(row_50))

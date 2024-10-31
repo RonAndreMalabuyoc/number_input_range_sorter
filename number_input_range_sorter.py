@@ -37,8 +37,8 @@ for number in user_input:
     elif number <= 50:
         row_50.append(numbers)
 
-print("Row 1-10:", len(row_10))
-print("Row 11-20:", len(row_20))
-print("Row 21-30:", len(row_30))
-print("Row 31-40:", len(row_40))
-print("Row 41-50:", len(row_50))
+print("1-10:", len(row_10))
+print("11-20:", len(row_20))
+print("21-30:", len(row_30))
+print("31-40:", len(row_40))
+print("41-50:", len(row_50))

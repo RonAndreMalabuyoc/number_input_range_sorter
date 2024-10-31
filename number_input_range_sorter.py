@@ -24,14 +24,14 @@ row_50 = []
 
 for numbers in user_input:
     if user_input <= 10:
-        user_input.append(row_10)
+        row_10.append(numbers)
     elif user_input <= 20:
-        user_input.append(row_20)
+        row_20.append(numbers)
     elif user_input <= 30:
-        user_input.append(row_30)
+        row_30.append(numbers)
     elif user_input <= 40:
-        user_input.append(row_40)
+        row_40.append(numbers)
     elif user_input <= 50:
-        user_input.append(row_50)
+        row_50.append(numbers)
 
 print(row_10, row_20, row_30, row_40, row_50)

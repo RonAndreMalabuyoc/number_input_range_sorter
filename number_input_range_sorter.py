@@ -4,8 +4,10 @@ while True:
     try:
         numbers = int(input("Please input a number from 1-50, if not there will be consequences: "))
 
-        if numbers > 51:
+        if 1 <= numbers <= 50:
             user_input.append(numbers)
+        else:
+            print("Out of range there buddy")
     except:
         print("Whoops, wrong")
 

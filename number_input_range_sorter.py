@@ -1,4 +1,4 @@
-user_input = {}
+user_input = []
 
 while True:
     try:
@@ -22,20 +22,16 @@ row_30 = []
 row_40 = []
 row_50 = []
 
-if numbers <= 50:
-    row_50.append(numbers)
-    count_50 = len(row_50)
-elif numbers <= 40:
-    row_40.append(numbers)
-    count_40 = len(row_40)
-elif numbers <= 30:
-    row_30.append(numbers)
-    count_30 = len(row_30)
-elif numbers <= 20:
-    row_20.append(numbers)
-    count_20 = len(row_20)
-elif numbers <= 10:
-    row_10.append(numbers)
-    count_10 = len(row_10)
+for numbers in user_input:
+    if user_input <= 10:
+        user_input.append(row_10)
+    elif user_input <= 20:
+        user_input.append(row_20)
+    elif user_input <= 30:
+        user_input.append(row_30)
+    elif user_input <= 40:
+        user_input.append(row_40)
+    elif user_input <= 50:
+        user_input.append(row_50)
 
-print(row_50, row_40, row_30, row_20, row_10)
+print(row_10, row_20, row_30, row_40, row_50)
